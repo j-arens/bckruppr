@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+
+  mysql:
+    image: mysql:5.7
+    container_name: bckruppr_mysql
+    restart: always
+    ports:
+      - '5000:3306'
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: bckruppr
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: bckruppruser
+      MYSQL_PASSWORD: bckrupprpass
+
+volumes:
+  dbdata:

@@ -1,0 +1,9 @@
+[package]
+name = "bckruppr"
+version = "0.1.0"
+authors = ["j-arens <arens.joshua@sbcglobal.net>"]
+edition = "2018"
+
+[dependencies]
+reqwest = "0.9.16"
+chrono = "0.4.6"
